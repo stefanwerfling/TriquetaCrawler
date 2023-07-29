@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  triquetacrawler:
+    image: triquetacrawler:v1.0
+    build:
+      context: ./
+      dockerfile: ./backend/Dockerfile
+    container_name: triquetacrawler_service
+    volumes:
+      - ./data:/home/app-user/app/data:rw
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "50"

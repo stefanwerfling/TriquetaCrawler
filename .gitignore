@@ -1,0 +1,11 @@
+/doc/work
+/config.json
+/package-lock.json
+/.idea
+/.env
+
+/backend/node_modules
+/backend/package-lock.json
+/backend/dist
+
+/data
