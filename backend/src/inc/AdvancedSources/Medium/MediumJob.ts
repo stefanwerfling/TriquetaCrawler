@@ -4,6 +4,7 @@ import {OpenGraphMetaTags} from '../../Tagging/OpenGraphMetaTags.js';
 import {Tagging} from '../../Tagging/Tagging.js';
 import {CrawlerJob} from './../../CrawlerJob.js';
 import * as puppeteer from 'puppeteer';
+import {PDFDocument} from 'pdf-lib';
 
 /**
  * MediumJob
@@ -207,6 +208,11 @@ export class MediumJob extends CrawlerJob {
                     printBackground: true,
                     timeout: 100000
                 });
+
+                // add meta information --------------------------------------------------------------------------------
+
+                // const pdfDoc = await PDFDocument.load(pdfFile);
+                // pdfDoc.getAuthor()
 
                 // await this._page.screenshot({path: `${pdfFile}.png`});
 

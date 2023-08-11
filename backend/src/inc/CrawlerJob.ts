@@ -30,7 +30,7 @@ export class CrawlerJob {
                 await this._page.setUserAgent(this._userAgent);
 
                 if (cookies) {
-                    console.log(`CrawlerJob::init: set cookies`);
+                    console.log('CrawlerJob::init: set cookies');
 
                     this._page.setCookie(cookies);
                 }
